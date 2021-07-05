@@ -1,0 +1,9 @@
+FROM ubuntu:20.04
+LABEL Author="Abin Thomas <athomas@fbk.eu>"
+ENV PYTHONUNBUFFERED=1
+COPY response_router_1.py /
+COPY requirements.txt /
+RUN apt-get update -y && apt-get upgrade -y  \
+    python3-pip
+RUN pip3 install -r requirements.txt
+CMD python3 response_router_1.py
