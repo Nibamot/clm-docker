@@ -9,5 +9,4 @@ RUN unzip master.zip
 RUN rm master.zip
 RUN mv response-router-master/response_router_1.py .
 RUN rm -rf response-router-master/
-RUN rm response_router_2.py
 CMD python3 response_router_1.py
