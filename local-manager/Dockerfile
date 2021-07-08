@@ -7,6 +7,6 @@ RUN pip3 install python-qpid-proton tornado
 RUN wget https://github.com/Nibamot/local-manager/archive/main.zip
 RUN unzip main.zip
 RUN rm main.zip
-RUN mv local-manager-main/local_manager_1.py .
+RUN mv local-manager-main/local_manager.py .
 RUN rm -rf local-manager-main/
-CMD python3 local_manager_1.py
+CMD python3 local_manager.py
