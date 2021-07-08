@@ -7,6 +7,6 @@ RUN pip3 install python-qpid-proton tornado
 RUN wget https://github.com/Nibamot/response-router/archive/master.zip
 RUN unzip master.zip
 RUN rm master.zip
-RUN mv response-router-master/response_router_1.py .
+RUN mv response-router-master/response_router.py .
 RUN rm -rf response-router-master/
-CMD python3 response_router_1.py
+CMD python3 response_router.py
